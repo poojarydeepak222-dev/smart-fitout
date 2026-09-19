@@ -27,6 +27,8 @@ jobs:
         run: npm install
       - name: Build React
         run: npm run build
+      - name: Keep custom domain
+        run: cp CNAME dist/CNAME
       - name: SPA fallback
         run: cp dist/index.html dist/404.html
       - name: Setup Pages
