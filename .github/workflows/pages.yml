@@ -29,6 +29,18 @@ jobs:
         run: npm run build
       - name: Keep custom domain
         run: cp CNAME dist/CNAME
+      - name: Copy static admin panel
+        run: cp -R admin dist/admin
+      - name: Copy admin support files
+        run: |
+          cp admin.css dist/admin.css
+          cp admin.js dist/admin.js
+          cp admin-email.js dist/admin-email.js
+          cp admin-messaging.js dist/admin-messaging.js
+      - name: Keep root static pages and SEO files
+        run: |
+          cp robots.txt dist/robots.txt
+          cp ads.txt dist/ads.txt
       - name: SPA fallback
         run: cp dist/index.html dist/404.html
       - name: Setup Pages
