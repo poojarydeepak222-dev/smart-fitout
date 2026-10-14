@@ -30,3 +30,6 @@
 .booking form small{display:block;color:var(--muted);font-weight:500}
 .booking form .btn:disabled{opacity:.65;cursor:wait}
 @media(max-width:700px){.gallery-jump{margin-top:12px}.quote-banner,.review-panel{align-items:flex-start;flex-direction:column;padding:22px}.quote-banner .btn,.review-panel .btn{width:100%;justify-content:center}.review-google{min-width:52px;height:52px}.plan-card small{min-height:0}}
+
+/* Live Before & After project gallery */
+.gallery-pair>div{position:relative;flex:1;min-width:0;overflow:hidden}.gallery-pair img{display:block;width:100%;height:180px;object-fit:cover;background:#f1f2f4}.gallery-label{position:absolute;z-index:1;left:8px;top:8px;padding:4px 7px;border-radius:6px;background:#151515e8;color:#fff;font-size:10px;font-weight:900;letter-spacing:.08em}.gallery-empty{padding:24px;border:1px dashed #e5e7eb;border-radius:16px;color:#70757d;background:#fff}.gallery-empty a{display:inline-block;margin-left:8px;color:#f47b20;font-weight:800}@media(max-width:600px){.gallery-pair img{height:145px}}
