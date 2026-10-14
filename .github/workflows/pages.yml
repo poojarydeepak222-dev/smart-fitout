@@ -49,6 +49,9 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: dist
+          artifact_name: smart-fitout-pages-${{ github.run_id }}-${{ github.run_attempt }}
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          artifact_name: smart-fitout-pages-${{ github.run_id }}-${{ github.run_attempt }}
